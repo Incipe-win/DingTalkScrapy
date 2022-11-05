@@ -1,4 +1,5 @@
 from ui_form import *
+from scrapy_dingtalk import *
 import sys
 from PyQt5.QtWidgets import QWidget, QApplication
 from PyQt5 import QtCore
@@ -14,6 +15,8 @@ class Login(QWidget):
 
     def entry(self):
         cookie = self.ui.cookie_info.toPlainText()
+        scrapy = ScrapyDingTalk(cookie)
+        scrapy.askURL()
 
     def retry(self):
         self.ui.cookie_info.clear()
