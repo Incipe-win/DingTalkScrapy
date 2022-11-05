@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/">
+    <file>DingTalk.ico</file>
+  </qresource>
+</RCC>
